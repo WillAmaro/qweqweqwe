@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Restringida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container" style="width: 400px;">
+
+    <div class="mts=5">
+        <h2>Pagina Restringida</h2>
+        <form th:action="@{maintenance/logout}" method="post">
+            <button type="button" class="btn btn-primary w-25 mt-3" onclick="location.href='/maintenance/start'">
+                Ir a la pagina principal
+            </button>
+            <button type="submit" class="btn btn-primary w-25 mt-3">
+                Cerrar Sesion
+            </button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
